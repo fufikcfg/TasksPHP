@@ -1,5 +1,4 @@
 <?php
-
 function delNoDouble($arr, $newArr = [], $double = 0)
 {
     for ($i = 0; $i < count($arr); $i++) {

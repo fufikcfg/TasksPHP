@@ -24,8 +24,8 @@ $next_birthday_ts = strtotime($user_day . '-' . $user_month . '-' . date('Y') . 
 if ($next_birthday_ts < time()) {
     $next_birthday_ts = strtotime($user_day . '-' . $user_month . '-' . (date('Y') + 1) . ' 00:00:00');
 }
-$diff_days = (int) ceil(($next_birthday_ts - time()) / (60 * 60 * 24));
 
+$diff_days = (int) ceil(($next_birthday_ts - time()) / (60 * 60 * 24));
 
 echo 'Дней до дня рождения: ' . $diff_days;
 ?>
